@@ -1,0 +1,204 @@
+# Python/FastAPI Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# Python IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be added to the global gitignore or merged into this project gitignore.  For a PyCharm
+#  project, it is recommended to include the following files in version control:
+#  - .idea/modules.xml
+#  - .idea/*.iml
+#  - .idea/misc.xml
+#  - .idea/vcs.xml
+.idea/
+
+# React/Frontend (Vite + TypeScript)
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Tailwind CSS
+.tailwindcache
+
+# ML Project Specific
+# Models and artifacts
+models/
+*.pkl
+*.joblib
+*.h5
+*.pb
+*.onnx
+*.tflite
+
+# Generated projects and pipelines
+generated_projects/
+generated_pipelines/
+
+# Sessions and temporary data
+sessions/
+*.session
+temp/
+tmp/
+
+# Visualizations and plots
+visualizations/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+!docs/*.png
+!docs/*.jpg
+!docs/*.jpeg
+!docs/*.svg
+!docs/*.pdf
+
+# Logs and monitoring
+logs/
+*.log
+wandb/
+mlruns/
+
+# Data files (be careful with this one)
+datasets/raw/
+datasets/processed/
+*.csv
+*.json
+*.parquet
+*.hdf5
+*.h5
+*.feather
+*.pkl
+!data/sample/*
+
+# Cache directories
+.cache/
+cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-*
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
