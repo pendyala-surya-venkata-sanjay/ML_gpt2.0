@@ -1,0 +1,181 @@
+{
+  "models": [
+    {
+      "id": "model_b339935f",
+      "created_at": "2026-03-18T14:35:03Z",
+      "display_name": "Breast_cancer_dataset",
+      "dataset_name": "Breast_cancer_dataset.csv",
+      "dataset_path": "datasets/uploaded_datasets\\Breast_cancer_dataset.csv",
+      "problem_type": "classification",
+      "target_column": "diagnosis",
+      "best_model": "Logistic Regression",
+      "metrics": {
+        "problem_type": "classification",
+        "metrics": {
+          "accuracy": 0.9736842105263158,
+          "precision": 0.9737190197716513,
+          "recall": 0.9736842105263158,
+          "f1_score": 0.973621425014614,
+          "confusion_matrix": [
+            [
+              70,
+              1
+            ],
+            [
+              2,
+              41
+            ]
+          ]
+        }
+      },
+      "pipeline_path": "models/ml_pipeline_20260318_143503.pkl"
+    },
+    {
+      "id": "model_09fda881",
+      "created_at": "2026-03-18T14:26:58Z",
+      "display_name": "Breast_cancer_dataset",
+      "dataset_name": "Breast_cancer_dataset.csv",
+      "dataset_path": "datasets/uploaded_datasets/Breast_cancer_dataset.csv",
+      "problem_type": "classification",
+      "target_column": "diagnosis",
+      "best_model": "Logistic Regression",
+      "metrics": {
+        "problem_type": "classification",
+        "metrics": {
+          "accuracy": 0.9736842105263158,
+          "precision": 0.9737190197716513,
+          "recall": 0.9736842105263158,
+          "f1_score": 0.973621425014614,
+          "confusion_matrix": [
+            [
+              70,
+              1
+            ],
+            [
+              2,
+              41
+            ]
+          ]
+        }
+      },
+      "pipeline_path": "models/ml_pipeline_20260318_142657.pkl"
+    },
+    {
+      "id": "model_c9108e07",
+      "created_at": "2026-03-18T14:25:43Z",
+      "display_name": "Breast_cancer_dataset",
+      "dataset_name": "Breast_cancer_dataset.csv",
+      "dataset_path": "datasets/uploaded_datasets/Breast_cancer_dataset.csv",
+      "problem_type": "classification",
+      "target_column": "diagnosis",
+      "best_model": "Logistic Regression",
+      "metrics": {
+        "problem_type": "classification",
+        "metrics": {
+          "accuracy": 0.9736842105263158,
+          "precision": 0.9737190197716513,
+          "recall": 0.9736842105263158,
+          "f1_score": 0.973621425014614,
+          "confusion_matrix": [
+            [
+              70,
+              1
+            ],
+            [
+              2,
+              41
+            ]
+          ]
+        }
+      },
+      "pipeline_path": "models/ml_pipeline_20260318_142543.pkl"
+    },
+    {
+      "id": "model_b8021e3c",
+      "created_at": "2026-03-18T14:24:30Z",
+      "display_name": "Breast_cancer_dataset",
+      "dataset_name": "Breast_cancer_dataset.csv",
+      "dataset_path": "datasets/uploaded_datasets/Breast_cancer_dataset.csv",
+      "problem_type": "classification",
+      "target_column": "diagnosis",
+      "best_model": "Logistic Regression",
+      "metrics": {
+        "problem_type": "classification",
+        "metrics": {
+          "accuracy": 0.9736842105263158,
+          "precision": 0.9737190197716513,
+          "recall": 0.9736842105263158,
+          "f1_score": 0.973621425014614,
+          "confusion_matrix": [
+            [
+              70,
+              1
+            ],
+            [
+              2,
+              41
+            ]
+          ]
+        }
+      },
+      "pipeline_path": "models/ml_pipeline_20260318_142430.pkl"
+    },
+    {
+      "id": "model_6e8f421e",
+      "created_at": "2026-03-18T14:15:14Z",
+      "dataset_name": "Breast_cancer_dataset.csv",
+      "dataset_path": "datasets/uploaded_datasets\\Breast_cancer_dataset.csv",
+      "problem_type": "classification",
+      "target_column": "diagnosis",
+      "best_model": "Logistic Regression",
+      "metrics": {
+        "problem_type": "classification",
+        "metrics": {
+          "accuracy": 0.9736842105263158,
+          "precision": 0.9737190197716513,
+          "recall": 0.9736842105263158,
+          "f1_score": 0.973621425014614,
+          "confusion_matrix": [
+            [
+              70,
+              1
+            ],
+            [
+              2,
+              41
+            ]
+          ]
+        }
+      },
+      "pipeline_path": "models/ml_pipeline_20260318_141514.pkl"
+    }
+  ],
+  "active_model_id": "model_b339935f",
+  "exports": [
+    {
+      "model_id": "model_b339935f",
+      "created_at": "2026-03-18T14:35:03Z",
+      "zip_path": "generated_projects\\ml_project_20260318_143503.zip"
+    },
+    {
+      "model_id": "model_09fda881",
+      "created_at": "2026-03-18T14:26:58Z",
+      "zip_path": "generated_projects\\ml_project_20260318_142657.zip"
+    },
+    {
+      "model_id": "model_c9108e07",
+      "created_at": "2026-03-18T14:25:43Z",
+      "zip_path": "generated_projects\\ml_project_20260318_142543.zip"
+    },
+    {
+      "model_id": "model_b8021e3c",
+      "created_at": "2026-03-18T14:24:30Z",
+      "zip_path": "generated_projects\\ml_project_20260318_142430.zip"
+    },
+    {
+      "model_id": "model_6e8f421e",
+      "created_at": "2026-03-18T14:15:14Z",
+      "zip_path": "generated_projects\\ml_project_20260318_141514.zip"
+    }
+  ]
+}

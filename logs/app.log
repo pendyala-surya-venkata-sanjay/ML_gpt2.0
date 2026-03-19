@@ -1,0 +1,258 @@
+2026-03-11 23:18:37,673 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-11 23:19:31,277 - INFO - Prediction successful: Finance
+2026-03-12 13:40:26,316 - INFO - Training started
+2026-03-12 13:40:28,328 - INFO - Training completed
+2026-03-12 13:40:40,059 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 13:40:43,901 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 13:40:43,927 - INFO - Training started
+2026-03-12 13:40:45,725 - INFO - Training completed
+2026-03-12 13:40:50,372 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 13:41:07,904 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 13:41:08,015 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 14:53:25,441 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 14:53:45,037 - INFO - Training started
+2026-03-12 14:53:46,144 - INFO - Training completed
+2026-03-12 14:56:10,635 - INFO - Prediction successful: IT
+2026-03-12 17:23:24,288 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 17:24:21,968 - INFO - Training started
+2026-03-12 17:24:22,848 - ERROR - Training failed: 'numpy.ndarray' object has no attribute 'columns'
+2026-03-12 17:28:17,146 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 17:34:56,840 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 17:35:56,140 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 18:01:26,142 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-03-12 18:01:51,917 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-03-12 18:04:23,287 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 18:04:48,310 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 18:05:17,712 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:50:21,690 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:57:09,367 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:57:41,271 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 22:58:08,318 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:17:22,677 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:17:23,417 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:17:42,497 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:17:55,671 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:17:56,483 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:18:17,020 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:20:01,087 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:20:10,910 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:24:14,646 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:24:28,654 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-12 23:24:33,547 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:25:30,954 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:25:42,066 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:28:03,780 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:28:12,080 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:29:35,387 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:30:14,756 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:30:23,843 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-12 23:30:57,693 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:37:48,122 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:37:53,048 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:44:16,438 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:44:17,949 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:53:31,490 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:03,915 - INFO - Prediction successful: IT
+2026-03-18 16:54:12,088 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:19,621 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:25,949 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:26,702 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:38,787 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:39,862 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:51,661 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:54:52,533 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:55:02,336 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:55:11,030 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:55:31,116 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:55:32,176 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:55:47,783 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:55:49,152 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:56:01,215 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:56:02,551 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 16:56:12,459 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:19:10,103 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:19:10,728 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:21:15,393 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:21:15,723 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:21:34,197 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:21:34,931 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:24:11,473 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:24:12,371 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:24:33,012 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:24:33,312 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:26:29,467 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:26:29,780 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 17:30:55,104 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 17:30:57,899 - INFO - Training started
+2026-03-18 17:31:04,396 - ERROR - Training failed: No models were trained successfully.
+2026-03-18 17:31:20,490 - INFO - Training started
+2026-03-18 17:31:26,378 - ERROR - Training failed: No models were trained successfully.
+2026-03-18 18:11:21,392 - INFO - Retrying request to /openai/v1/chat/completions in 0.488097 seconds
+2026-03-18 18:11:21,889 - INFO - Retrying request to /openai/v1/chat/completions in 0.812356 seconds
+2026-03-18 18:11:22,723 - INFO - Retrying request to /openai/v1/chat/completions in 0.489550 seconds
+2026-03-18 18:11:23,215 - INFO - Retrying request to /openai/v1/chat/completions in 0.949362 seconds
+2026-03-18 18:11:48,804 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:11:49,277 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:12:10,444 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:12:10,994 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:12:23,566 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:12:24,476 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:12:45,799 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:12:47,358 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:51:10,262 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 18:51:19,065 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:51:32,502 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 18:51:44,665 - INFO - Training started
+2026-03-18 18:51:52,443 - ERROR - Training failed: No models were trained successfully.
+2026-03-18 18:52:00,407 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:01:06,294 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:01:07,281 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:01:30,558 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:01:43,922 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:04:46,023 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:04:46,949 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:05:11,109 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:06:13,048 - INFO - Prediction successful: IT
+2026-03-18 19:06:32,642 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:06:37,315 - INFO - Training started
+2026-03-18 19:07:02,568 - ERROR - Training failed: No models were trained successfully.
+2026-03-18 19:08:53,264 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:09:00,081 - INFO - Training started for dataset: datasets/uploaded_datasets\\sample_dataset.csv
+2026-03-18 19:09:01,092 - INFO - Training completed
+2026-03-18 19:09:39,211 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 19:10:03,633 - ERROR - Training failed: No models were trained successfully.
+
+Full traceback:
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\projects\ml_assistant\backend\api\training_routes.py", line 20, in train_model
+    result = pipeline.run_pipeline()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\ml_pipeline_controller.py", line 84, in run_pipeline
+    training_result = trainer.train()
+                      ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\training_engine.py", line 178, in train
+    self.select_best_model()
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\training_engine.py", line 121, in select_best_model
+    raise ValueError("No models were trained successfully.")
+ValueError: No models were trained successfully.
+
+2026-03-18 19:10:34,600 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:10:53,914 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:12:17,716 - INFO - Training started for dataset: datasets/uploaded_datasets\\Breast_cancer_dataset.csv
+2026-03-18 19:12:25,928 - ERROR - Training failed: No models were trained successfully.
+
+Full traceback:
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\projects\ml_assistant\backend\api\training_routes.py", line 20, in train_model
+    result = pipeline.run_pipeline()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\ml_pipeline_controller.py", line 84, in run_pipeline
+    training_result = trainer.train()
+                      ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\training_engine.py", line 178, in train
+    self.select_best_model()
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\training_engine.py", line 121, in select_best_model
+    raise ValueError("No models were trained successfully.")
+ValueError: No models were trained successfully.
+
+2026-03-18 19:13:39,485 - INFO - Training started for dataset: datasets/uploaded_datasets\\Breast_cancer_dataset.csv
+2026-03-18 19:13:48,627 - ERROR - Training failed: No models were trained successfully.
+
+Full traceback:
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\projects\ml_assistant\backend\api\training_routes.py", line 20, in train_model
+    result = pipeline.run_pipeline()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\ml_pipeline_controller.py", line 84, in run_pipeline
+    training_result = trainer.train()
+                      ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\training_engine.py", line 182, in train
+    self.select_best_model()
+  File "C:\Users\hp\Desktop\projects\ml_assistant\ml_pipeline\training_engine.py", line 125, in select_best_model
+    raise ValueError("No models were trained successfully.")
+ValueError: No models were trained successfully.
+
+2026-03-18 19:17:23,577 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:17:41,201 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:17:49,631 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 19:18:16,150 - INFO - Training completed
+2026-03-18 19:18:47,151 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 19:18:58,885 - INFO - Training completed
+2026-03-18 19:19:24,812 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:19:24,818 - INFO - Training started for dataset: datasets/uploaded_datasets\sample_dataset.csv
+2026-03-18 19:19:25,624 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:19:25,630 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:19:26,031 - INFO - Training completed
+2026-03-18 19:20:10,510 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:20:11,415 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:22:46,151 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:23:20,452 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:23:48,107 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:23:57,243 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:24:36,939 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:25:00,664 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:25:03,822 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 19:25:28,443 - INFO - Training completed
+2026-03-18 19:25:56,272 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:26:15,832 - INFO - Training started for dataset: datasets/uploaded_datasets\\Breast_cancer_dataset.csv
+2026-03-18 19:26:39,168 - INFO - Training completed
+2026-03-18 19:27:11,797 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:27:18,366 - INFO - Training started for dataset: datasets/uploaded_datasets\\sample_dataset.csv
+2026-03-18 19:27:18,991 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:27:18,999 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:27:19,330 - INFO - Training completed
+2026-03-18 19:27:27,687 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:27:28,623 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 19:27:48,936 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:27:48,943 - INFO - Training started for dataset: datasets/uploaded_datasets\sample_dataset.csv
+2026-03-18 19:27:49,495 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:27:49,500 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:27:49,936 - INFO - Training completed
+2026-03-18 19:28:30,884 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:28:34,303 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 19:28:58,387 - INFO - Training completed
+2026-03-18 19:30:14,223 - INFO - Training started for dataset: datasets/uploaded_datasets\\sample_dataset.csv
+2026-03-18 19:30:14,873 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:30:14,882 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:30:15,275 - INFO - Training completed
+2026-03-18 19:30:44,117 - INFO - Training started for dataset: datasets/uploaded_datasets\\sample_dataset.csv
+2026-03-18 19:30:44,634 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:30:44,651 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:30:45,008 - INFO - Training completed
+2026-03-18 19:31:30,740 - INFO - Training started for dataset: datasets/uploaded_datasets\\sample_dataset.csv
+2026-03-18 19:31:31,259 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:31:31,263 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:31:31,636 - INFO - Training completed
+2026-03-18 19:32:58,521 - INFO - Dataset uploaded successfully: sample_dataset.csv
+2026-03-18 19:32:58,536 - INFO - Training started for dataset: datasets/uploaded_datasets\sample_dataset.csv
+2026-03-18 19:32:59,073 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:32:59,080 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-03-18 19:32:59,445 - INFO - Training completed
+2026-03-18 19:44:46,249 - INFO - Dataset uploaded successfully: Breast_cancer_dataset.csv
+2026-03-18 19:44:58,560 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 19:45:14,322 - INFO - Training completed
+2026-03-18 19:54:24,169 - INFO - Training started for dataset: datasets/uploaded_datasets/Breast_cancer_dataset.csv
+2026-03-18 19:54:30,735 - INFO - Training completed
+2026-03-18 19:55:37,026 - INFO - Training started for dataset: datasets/uploaded_datasets/Breast_cancer_dataset.csv
+2026-03-18 19:55:43,249 - INFO - Training completed
+2026-03-18 19:56:51,671 - INFO - Training started for dataset: datasets/uploaded_datasets/Breast_cancer_dataset.csv
+2026-03-18 19:56:58,033 - INFO - Training completed
+2026-03-18 20:04:56,095 - INFO - Training started for dataset: datasets/uploaded_datasets\Breast_cancer_dataset.csv
+2026-03-18 20:05:03,520 - INFO - Training completed
+2026-03-18 20:07:19,559 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:15:03,255 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:15:03,993 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:17:11,678 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:17:13,569 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:33:18,461 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:33:20,038 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:34:13,420 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:34:14,614 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:38:41,023 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:38:41,289 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:38:53,331 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:38:54,130 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:39:24,188 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:39:25,285 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:46:50,305 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 20:46:50,916 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

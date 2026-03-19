@@ -1,0 +1,9 @@
+{
+  "missing_values": "Missing values occur when data entries are empty or null. They can be handled by removing rows or filling them with mean, median, or mode.",
+  
+  "encoding": "Encoding converts categorical text data into numerical format so machine learning models can understand it.",
+  
+  "scaling": "Feature scaling normalizes numeric features so that all features contribute equally to the model.",
+  
+  "outliers": "Outliers are extreme values that differ significantly from other observations."
+}

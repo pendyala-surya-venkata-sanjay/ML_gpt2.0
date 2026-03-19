@@ -1,0 +1,6 @@
+{
+    "svm": "Support Vector Machine finds the optimal boundary separating classes in the dataset.",
+    "random_forest": "Random Forest is an ensemble learning algorithm that builds multiple decision trees and combines their predictions.",
+    "logistic_regression": "Logistic Regression is used for classification problems where the output variable is categorical."
+  
+}

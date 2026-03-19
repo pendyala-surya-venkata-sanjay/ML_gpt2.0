@@ -1,0 +1,9 @@
+{
+  "model_training": "Model training is the process of allowing a machine learning algorithm to learn patterns from the training dataset.",
+  
+  "train_test_split": "Train test split divides the dataset into training data and testing data to evaluate model performance.",
+  
+  "cross_validation": "Cross validation evaluates model performance by training and testing multiple times on different dataset splits.",
+  
+  "hyperparameter_tuning": "Hyperparameter tuning searches for the best model configuration to improve performance."
+}

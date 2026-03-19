@@ -1,0 +1,8 @@
+{
+    "machine_learning": "Machine learning is a field of AI that allows computers to learn patterns from data without being explicitly programmed.",
+    "supervised_learning": "Supervised learning is a type of machine learning where the model learns from labeled data.",
+    "unsupervised_learning": "Unsupervised learning finds hidden patterns in data without labeled outputs.",
+    "overfitting": "Overfitting happens when a model learns the training data too well including noise, causing poor performance on new data.",
+    "feature_engineering": "Feature engineering is the process of creating new input features from existing data to improve model performance.",
+    "underfitting": "improper training"
+}
