@@ -1,0 +1,69 @@
+# =========================
+# FRONTEND (React / Next.js)
+# =========================
+node_modules/
+.next/
+dist/
+build/
+out/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# BACKEND (Python / FastAPI)
+# =========================
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python cache & compiled files
+*.so
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+
+# =========================
+# GENERAL
+# =========================
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OPTIONAL (if used)
+# =========================
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+models/
+generated_projects/
+logs/
+sessions/
+visualizations/

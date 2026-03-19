@@ -9,6 +9,7 @@ from backend.api.models_routes import router as models_router
 from backend.api.training_routes import router as training_router
 from backend.api.prediction_routes import router as prediction_router
 
+
 app = FastAPI(
     title="AI ML Assistant",
     description="Machine Learning Assistant API",
