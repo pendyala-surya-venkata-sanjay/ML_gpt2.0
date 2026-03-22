@@ -1,12 +1,25 @@
-fastapi
-uvicorn
-python-multipart
-pydantic
-numpy
-pandas
-scikit-learn
-joblib
-matplotlib
-seaborn
-sentence-transformers
-groq
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Data Validation
+pydantic>=2.5.0
+
+# Data Science & ML
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# NLP & AI
+sentence-transformers>=2.2.0
+groq>=0.4.0
+
+# Additional utilities (if needed)
+# typing-extensions>=4.8.0  # Often required by pydantic
+# python-dateutil>=2.8.0    # For datetime handling

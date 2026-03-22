@@ -15,15 +15,15 @@ from sklearn.linear_model import LogisticRegression
 # Load Dataset
 # -----------------------------------
 
-df = pd.read_csv("datasets/uploaded_datasets\Breast_cancer_dataset.csv")
+df = pd.read_csv("C:/Users/hp/Desktop/projects/ml_assistant/datasets/uploaded_datasets/crop_yeild_dataset1.csv")
 
 # -----------------------------------
 # Split Features and Target
 # -----------------------------------
 
-X = df.drop("diagnosis", axis=1)
+X = df.drop("State", axis=1)
 
-y = df["diagnosis"]
+y = df["State"]
 
 # -----------------------------------
 # Encode Categorical Columns

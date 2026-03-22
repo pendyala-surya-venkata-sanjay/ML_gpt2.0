@@ -8,6 +8,7 @@ from backend.api.analysis_routes import router as analysis_router
 from backend.api.models_routes import router as models_router
 from backend.api.training_routes import router as training_router
 from backend.api.prediction_routes import router as prediction_router
+from backend.api.visualization_routes import router as visualization_router
 
 
 app = FastAPI(
@@ -44,8 +45,21 @@ app.include_router(analysis_router)
 app.include_router(models_router)
 app.include_router(training_router)
 app.include_router(prediction_router)
+app.include_router(visualization_router)
 
 
 @app.get("/")
 def home():
     return {"message": "ML Assistant API is running"}
+
+
+if __name__ == "__main__":
+    # Allow `python -m backend.main` to start the API server directly.
+    import uvicorn
+
+    uvicorn.run(
+        "backend.main:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True,
+    )

@@ -6,9 +6,14 @@ class FeatureEngineering:
     def __init__(self, df):
         self.df = df.copy()
 
+    def get_features(self):
+        """Return the engineered feature dataframe."""
+        return self.df
+
     def interaction_features(self):
 
-        numeric_cols = self.df.select_dtypes(include=['int64', 'float64']).columns
+        # Treat any numeric dtype as numeric.
+        numeric_cols = self.df.select_dtypes(include=["number"]).columns
 
         for i in range(len(numeric_cols)):
             for j in range(i + 1, len(numeric_cols)):
@@ -28,7 +33,8 @@ class FeatureEngineering:
 
             if "date" in col.lower():
 
-                self.df[col] = pd.to_datetime(self.df[col])
+                # Be tolerant to unexpected formats coming from new datasets.
+                self.df[col] = pd.to_datetime(self.df[col], errors="coerce")
 
                 self.df[f"{col}_year"] = self.df[col].dt.year
                 self.df[f"{col}_month"] = self.df[col].dt.month
@@ -41,5 +47,22 @@ class FeatureEngineering:
         self.datetime_features()
 
         self.interaction_features()
+
+        return self.df
+
+    def apply_intelligent_engineering(self, analysis_result=None):
+        """
+        Backwards-compatible, safer feature engineering.
+        - Always handles datetime-like columns.
+        - Adds interaction features only when there are at least two numeric columns.
+        - Ignores analysis_result for now but keeps it for future adaptive logic.
+        """
+        # Always extract datetime features; this is cheap and robust.
+        self.datetime_features()
+
+        # Only create interaction terms when it makes sense.
+        numeric_cols = self.df.select_dtypes(include=["number"]).columns
+        if len(numeric_cols) >= 2:
+            self.interaction_features()
 
         return self.df

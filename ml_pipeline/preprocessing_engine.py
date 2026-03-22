@@ -39,9 +39,18 @@ class PreprocessingEngine:
             self.y = self.y[valid_indices]
             print(f"Remaining rows after cleaning: {len(self.y)}")
 
+        # Guard: after cleaning, there must be at least one row.
+        if self.y is None or len(self.y) == 0:
+            raise ValueError("No valid rows available after cleaning the target column (all rows removed).")
+
         # Detect column types
-        numeric_features = self.X.select_dtypes(include=["int64", "float64"]).columns
+        # Treat any numeric dtype as numeric.
+        numeric_features = self.X.select_dtypes(include=["number"]).columns
         categorical_features = self.X.select_dtypes(include=["object"]).columns
+
+        # Guard: avoid creating an empty ColumnTransformer (can crash downstream estimators).
+        if len(numeric_features) == 0 and len(categorical_features) == 0:
+            raise ValueError("No usable feature columns found. Ensure your dataset has numeric or object columns.")
 
         # Numeric pipeline
         numeric_pipeline = Pipeline(

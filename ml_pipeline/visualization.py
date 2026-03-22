@@ -3,6 +3,7 @@ import seaborn as sns
 import pandas as pd
 import os
 import matplotlib
+import numpy as np
 matplotlib.use("Agg")
 
 
@@ -20,10 +21,18 @@ class VisualizationEngine:
     # -----------------------------
     def correlation_heatmap(self):
 
-        numeric_df = self.df.select_dtypes(include=['int64', 'float64'])
+        # Treat any numeric dtype as numeric (int32/float32/decimal/etc).
+        numeric_df = self.df.select_dtypes(include=["number"])
+        if numeric_df.shape[1] < 2:
+            # Not enough numeric features for a meaningful correlation heatmap.
+            return None
+
+        corr = numeric_df.corr()
+        if corr.empty:
+            return None
 
         plt.figure(figsize=(8,6))
-        sns.heatmap(numeric_df.corr(), annot=True, cmap="coolwarm")
+        sns.heatmap(corr, annot=True, cmap="coolwarm")
 
         file_path = "visualizations/correlation_heatmap.png"
         plt.savefig(file_path)
@@ -36,7 +45,9 @@ class VisualizationEngine:
     # -----------------------------
     def feature_distributions(self):
 
-        numeric_cols = self.df.select_dtypes(include=['int64','float64']).columns
+        numeric_cols = self.df.select_dtypes(include=["number"]).columns
+        if len(numeric_cols) == 0:
+            return []
 
         paths = []
 
@@ -118,3 +129,14 @@ class VisualizationEngine:
         results["target_distribution"] = self.target_distribution()
 
         return results
+
+    # -----------------------------
+    # Compatibility helper used by API
+    # -----------------------------
+    def generate_relevant_visualizations(self, problem_type=None):
+        """
+        Backwards-compatible wrapper.
+        For now we just generate all visualizations and let the frontend
+        decide which ones to display.
+        """
+        return self.generate_all()

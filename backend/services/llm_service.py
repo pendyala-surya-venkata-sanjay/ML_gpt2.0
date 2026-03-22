@@ -11,36 +11,52 @@ class LLMService:
         self._client = None
 
     def ask(self, question, history=None):
-
+        """Enhanced LLM service with better context handling and professional responses."""
         try:
             if not self.api_key:
                 return (
-                    "LLM is not configured. Set the GROQ_API_KEY environment variable on the backend "
-                    "to enable ChatGPT-like answers."
+                    "I'm currently operating in basic mode. For enhanced AI assistance, "
+                    "please configure the GROQ_API_KEY environment variable on the backend."
                 )
 
             if self._client is None:
                 from groq import Groq
                 self._client = Groq(api_key=self.api_key)
 
-            messages = [
-                {
-                    "role": "system",
-                    "content": (
-                        "You are a professional, helpful assistant. "
-                        "Write clear, concise answers with a calm, confident tone. "
-                        "You can answer general knowledge questions and also provide expert guidance in machine learning. "
-                        "When explaining processes, use structured steps and practical guidance. "
-                        "If information may be outdated or uncertain, say so briefly and suggest how to verify."
-                        "\n\nIf the conversation includes a system message starting with 'CONTEXT', treat it as the user's "
-                        "actual dataset/model/training context and answer specifically about that context (not generic theory)."
-                    )
-                }
-            ]
+            # Build enhanced system prompt
+            system_prompt = (
+                "You are a professional AI assistant specializing in machine learning and data science. "
+                "You provide clear, structured, and helpful responses with a confident yet approachable tone.\n\n"
+                
+                "Guidelines:\n"
+                "- Be concise but thorough\n"
+                "- Use structured formatting (bullet points, numbered lists) when appropriate\n"
+                "- Provide practical, actionable advice\n"
+                "- Acknowledge limitations and suggest alternatives\n"
+                "- Maintain context from previous messages\n"
+                "- If discussing ML concepts, be precise but accessible\n\n"
+                
+                "If the conversation includes system messages about datasets or models, "
+                "use that information to provide specific, contextual assistance."
+            )
 
-            # Include chat history if available
+            messages = [{"role": "system", "content": system_prompt}]
+
+            # Include conversation history with context awareness
             if history:
-                messages.extend(history)
+                # Limit history to prevent token overflow but maintain context
+                recent_history = history[-10:] if len(history) > 10 else history
+
+                # Normalize history into Groq-compatible format:
+                # keep only role/content fields and drop extra keys like timestamp.
+                for item in recent_history:
+                    if not isinstance(item, dict):
+                        continue
+                    role = item.get("role")
+                    content = item.get("content")
+                    if not role or not content:
+                        continue
+                    messages.append({"role": str(role), "content": str(content)})
 
             messages.append({
                 "role": "user",
@@ -50,10 +66,21 @@ class LLMService:
             completion = self._client.chat.completions.create(
                 model="llama-3.1-8b-instant",
                 messages=messages,
-                temperature=0.3
+                temperature=0.2,  # Lower temperature for more consistent responses
+                max_tokens=1000   # Reasonable length limit
             )
 
-            return completion.choices[0].message.content
+            response = completion.choices[0].message.content
+            
+            # Post-process response for better formatting
+            if not response.endswith(('.', '!', '?', ':')):
+                response += '.'
+                
+            return response
 
         except Exception as e:
-            return f"LLM error: {str(e)}"
+            # Graceful error handling
+            error_msg = f"I encountered an issue processing your request. {str(e)}"
+            if "quota" in str(e).lower() or "rate" in str(e).lower():
+                error_msg = "I'm currently experiencing high demand. Please try again in a moment."
+            return error_msg

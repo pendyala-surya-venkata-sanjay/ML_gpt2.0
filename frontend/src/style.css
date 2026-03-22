@@ -4,7 +4,35 @@
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light dark;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    /* Used by `code, .counter` below. */
+    --text-h: rgba(15, 23, 42, 1); /* slate-900 */
+    /* Light theme inline-code background (paired with `--text-h` = dark text) */
+    --code-bg: rgba(15, 23, 42, 0.08);
+
+    /* Accent tokens for `.counter` styling. */
+    --accent: rgba(79, 70, 229, 1); /* indigo-600 */
+    --accent-bg: rgba(79, 70, 229, 0.15);
+    --accent-border: rgba(79, 70, 229, 0.4);
+
+    --border: rgba(15, 23, 42, 0.12);
+    --social-bg: rgba(148, 163, 184, 0.15);
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .dark {
+    --text-h: rgba(226, 232, 240, 1); /* slate-200 */
+    --code-bg: rgba(2, 6, 23, 0.9);
+
+    --accent: rgba(165, 180, 252, 1); /* indigo-300 */
+    --accent-bg: rgba(99, 102, 241, 0.22);
+    --accent-border: rgba(99, 102, 241, 0.55);
+
+    --border: rgba(148, 163, 184, 0.25);
+    --social-bg: rgba(15, 23, 42, 0.35);
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   }
 
   html,
@@ -18,31 +46,45 @@
   }
 
   body {
-    background: radial-gradient(1200px 600px at 20% 0%, rgba(99, 102, 241, 0.20), transparent 60%),
-      radial-gradient(900px 500px at 85% 10%, rgba(34, 211, 238, 0.14), transparent 55%),
-      radial-gradient(900px 500px at 50% 100%, rgba(167, 139, 250, 0.10), transparent 60%),
-      #020617;
+    background: #f3f4f6;
+    overflow: hidden;
+  }
+
+  .dark body {
+    background: #0f172a;
     overflow: hidden;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-slate-900/80 border border-white/5;
+    @apply bg-white border border-gray-200 shadow-sm;
+  }
+
+  .dark .glass {
+    @apply bg-slate-900 border-slate-800 shadow-sm;
   }
 
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium
-      bg-white/10 hover:bg-white/15 border border-white/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+      bg-gray-100 hover:bg-gray-200 border border-gray-300 text-gray-900 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .dark .btn {
+    @apply bg-slate-900 hover:bg-slate-800 border-slate-700 text-slate-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
   .btn-primary {
-    @apply bg-indigo-500/90 hover:bg-indigo-500 text-white border-indigo-400/40;
+    @apply bg-blue-600 hover:bg-blue-700 text-white border-blue-600;
   }
 
   .input {
-    @apply w-full rounded-lg bg-slate-900/40 border border-white/10 px-3 py-2 text-sm
-      placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50;
+    @apply w-full rounded-lg bg-white border border-gray-300 px-3 py-2 text-sm text-gray-900
+      placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50;
+  }
+
+  .dark .input {
+    @apply bg-slate-900 border-slate-700 text-slate-100 placeholder:text-slate-400 focus:ring-blue-400/50;
   }
 
   .textarea {
@@ -50,23 +92,29 @@
   }
 
   .pill {
-    @apply inline-flex items-center rounded-full px-2 py-1 text-xs border border-white/10 bg-white/5 text-slate-200;
+    @apply inline-flex items-center rounded-full px-2 py-1 text-xs border border-gray-300 bg-gray-100 text-gray-700;
+  }
+
+  .dark .pill {
+    @apply border-slate-700 bg-slate-900 text-slate-200;
   }
 }
 
 @layer utilities {
   .scrollbar {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
   }
   .scrollbar::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    background: transparent;
   }
   .scrollbar::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-clip: padding-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: none;
   }
 }
 
@@ -108,6 +156,7 @@
   border-radius: 0.75rem;
   background: rgba(2, 6, 23, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(226, 232, 240, 1); /* ensures readable code on dark pre background */
 }
 p {
   margin: 0;

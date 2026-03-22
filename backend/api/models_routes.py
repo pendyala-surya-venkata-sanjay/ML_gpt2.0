@@ -1,10 +1,19 @@
 from fastapi import APIRouter
+from pydantic import BaseModel
 
 from backend.services.logger import logger
 from backend.services import model_registry
 from ml_pipeline.export_project import ProjectExporter
 
 router = APIRouter()
+
+
+class DeleteByDatasetRequest(BaseModel):
+    dataset_path: str
+
+
+class DeleteModelRequest(BaseModel):
+    model_id: str
 
 
 @router.get("/models")
@@ -62,4 +71,50 @@ def create_export(model_id: str, project_name: str):
     except Exception as e:
         logger.error(f"Export create failed: {str(e)}")
         return {"status": "error", "message": str(e)}
+
+
+@router.post("/models/clear")
+def clear_models():
+    """
+    Clear all registered models/exports and generated artifacts.
+    Intended for development resets.
+    """
+    try:
+        model_registry.clear_registry_and_files()
+        return {"status": "success"}
+    except Exception as e:
+        logger.error(f"Clear models failed: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
+
+@router.post("/models/delete_by_dataset")
+def delete_models_by_dataset(payload: DeleteByDatasetRequest):
+    """
+    Remove all trained models/exports associated with the given dataset path.
+    Used when the user deletes a chat.
+    """
+
+    try:
+        result = model_registry.delete_models_by_dataset_path(payload.dataset_path)
+        return {"status": "success", **result}
+    except Exception as e:
+        logger.error(f"Delete-by-dataset failed: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
+
+@router.post("/models/delete")
+def delete_model(payload: DeleteModelRequest):
+    """
+    Delete a single trained model and all its artifacts:
+    pipeline file, exported zip(s), dataset (best-effort), and visualizations.
+    """
+
+    try:
+        result = model_registry.delete_model_by_id(payload.model_id)
+        return {"status": "success", **result}
+    except Exception as e:
+        logger.error(f"Delete model failed: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
+
 

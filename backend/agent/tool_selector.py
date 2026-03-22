@@ -14,7 +14,11 @@ class ToolSelector:
             "ml_question"
         ]
 
-    def select_tool(self, message):
+    def select_tool(self, message, context=None):
+        """
+        Select the appropriate tool for the given message.
+        Context parameter is optional for future enhancement.
+        """
 
         prompt = f"""
 You are an AI agent responsible for selecting the correct tool.
